@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b2434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: 700px;
+  height: 600px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+
+.dice-face {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.roll-btn {
+  background: #5035ff;
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.description {
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+}
+
+.how-to-play {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.record-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.record-time {
+  margin: 0;
+}
+
+.lowest-reroll {
+  margin: 0;
+}
+
+.personal-record-container {
+  color: #ffffff;
+  position: absolute;
+  background: #0b2434;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.reset-game-btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  background: white;
+  color: #0b2434;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  transition: 0.4s;
+}
+
+.reset-game-btn:hover {
+  background: #071a25;
+  color: #fff;
+}
